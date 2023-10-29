@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <com.journeyapps.barcodescanner.DecoratedBarcodeView
+        android:id="@+id/scanner"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#525150"
+        android:orientation="vertical" />
+
+    <EditText
+        android:id="@+id/new_namaproduk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nama Produk" />
+
+    <EditText
+        android:id="@+id/new_hargaproduk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Harga"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/new_stok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Stok"
+        android:inputType="number" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+
+        <Button
+            android:id="@+id/cancelbtn"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Batal" />
+
+        <Button
+            android:id="@+id/selesaibtn"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/cancelbtn"
+            android:text="Selesai" />
+
+        <Button
+            android:id="@+id/tambhakanbtn"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@id/selesaibtn"
+            android:text="Tambahkan" />
+
+    </RelativeLayout>
+
+</LinearLayout>
+
